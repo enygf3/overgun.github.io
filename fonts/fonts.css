@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Gothic Regular';
+    src: url('subset-CenturyGothic.woff2') format('woff2'),
+        url('subset-CenturyGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gothic Bold';
+    src: url('subset-CenturyGothic-Bold.woff2') format('woff2'),
+        url('subset-CenturyGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
