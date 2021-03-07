@@ -524,6 +524,7 @@ footer {
     font-family: 'Gothic Regular';
     font-size: 16px;
     margin-top: 100%;
+    user-select: text;
 }
 
 @media all and (min-width: 2560px) and (max-width: 3840px) {
