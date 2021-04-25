@@ -92,7 +92,7 @@ a, p {
   font-size: 190px; }
 
 @media all and (max-width: 800px) {
-  .title {
+  .top__title {
     display: none; } }
 
 .top__title__word > li {
@@ -276,6 +276,11 @@ a, p {
   top: 50px;
   left: 4%; }
 
+@media all and (max-width: 800px) {
+  .game__desc__rect {
+    height: 280px;
+    top: 65px; } }
+
 @media all and (min-width: 2560px) and (max-width: 3840px) {
   .game__desc__rect {
     top: 100px; } }
@@ -308,7 +313,8 @@ a, p {
 
 @media all and (max-width: 800px) {
   .platform__logos {
-    width: 100%; }
+    width: 100%;
+    margin-top: 25%; }
     .platform__logos img {
       width: 150px; }
   .switch-logo img {
@@ -327,6 +333,10 @@ a, p {
   .slide__png img {
     width: 40%; }
 
+@media all and (max-width: 800px) {
+  .slide__png {
+    top: 50%; } }
+
 .before__swipe {
   background-color: #343232;
   position: absolute;
@@ -336,13 +346,18 @@ a, p {
   opacity: 0.7;
   transition-duration: 1s; }
 
+@media all and (max-width: 800px) {
+  .before__swipe {
+    height: 35vh; } }
+
 .swiper-container {
   z-index: 5;
   margin-top: 5%; }
 
 @media all and (max-width: 800px) {
   .swiper-container {
-    height: 35vh; } }
+    height: 35vh;
+    margin-top: 30%; } }
 
 .swiper-slide {
   background-position: center;
@@ -409,6 +424,11 @@ footer {
   transform: translate(-50%, 0%);
   white-space: nowrap; }
 
+@media all and (max-width: 800px) {
+  .footer__title {
+    font-size: 2.75rem;
+    top: 30%; } }
+
 .footer__title__word > li {
   display: inline;
   margin-left: -0.3em; }
@@ -420,6 +440,12 @@ footer {
   z-index: 3; }
   .left__robot img {
     width: 100%; }
+
+@media all and (max-width: 800px) {
+  .left__robot {
+    left: 0%; }
+    .left__robot img {
+      width: 75%; } }
 
 @media all and (min-width: 2048px) and (max-width: 2560px) {
   .left__robot {
@@ -435,6 +461,13 @@ footer {
   right: 13.5%; }
   .top__robot img {
     width: 100%; }
+
+@media all and (max-width: 800px) {
+  .top__robot {
+    left: 45%;
+    right: 0%; }
+    .top__robot img {
+      width: 60%; } }
 
 @media all and (min-width: 2560px) and (max-width: 3840px) {
   .top__robot {
@@ -464,10 +497,19 @@ footer {
   .game__engines img {
     padding-left: 50px; }
 
+@media all and (max-width: 800px) {
+  .game__engines {
+    display: none; } }
+
 .contacts {
   position: absolute;
   bottom: 2.5%;
   right: 1.5%; }
+
+@media all and (max-width: 800px) {
+  .contacts {
+    color: #fff;
+    z-index: 7; } }
 
 .contacts__title {
   font-family: 'Gothic Bold';
@@ -491,3 +533,11 @@ footer {
 @media all and (min-width: 2560px) and (max-width: 3840px) {
   .contact__email {
     font-size: 18px; } }
+
+.slider {
+  min-width: 100%;
+  min-height: 100vh; }
+
+@media all and (max-width: 800px) {
+  .slider {
+    min-height: 35vh; } }
