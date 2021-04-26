@@ -8,10 +8,15 @@
   text-decoration: none
   z-index: 5
 
+@media all and (max-width: 1000px)
+  ::-webkit-scrollbar 
+    display: none
+
+
 .mobile__orientation__land
   display: none
 
-@media all and (max-width: 800px) and (orientation: landscape)
+@media all and (max-width: 1000px) and (orientation: landscape)
   .mobile__orientation__land
     position: fixed
     width: 100vw
@@ -21,6 +26,14 @@
     background-color: #343232
     top: 0
     left: 0
+    h3
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      font-family: 'Gothic Bold'
+      color: #fff
+      font-size: 1rem
 
 img
   pointer-events: none
@@ -51,7 +64,7 @@ a, p
   width: 100%
   height: 100vh
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .top__bg
     video
       display: none
@@ -59,7 +72,7 @@ a, p
 .top__bg__mobile
   display: none
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .top__bg__mobile
     display: block
     margin-top: 0px
@@ -68,23 +81,6 @@ a, p
       width: 100vw
       height: 97.5vh
 
-.bg__grey__layer
-  background: #343232
-  opacity: 0.65
-  position: absolute
-  top: 0
-  left: 0
-  overflow: hidden
-  z-index: 3
-  background-size: cover
-  object-fit: cover
-  width: 100%
-  height: 100vh
-
-@media all and (max-width: 800px)
-  .bg__grey__layer
-    display: none
-
 .title
   font-family: 'Gothic Bold'
   color: #cb6d29
@@ -92,7 +88,7 @@ a, p
   margin: 21% 0% 0% 0%
   font-size: 190px
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
     .top__title
         display: none
 
@@ -105,7 +101,7 @@ a, p
   padding: 50px 0px 0px 0px
   animation: overgun__rect 3s ease infinite
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .top__rect
     font-size: 3rem
 
@@ -136,11 +132,11 @@ a, p
   margin-left: 36%
   margin-top: -1.5%
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .developer__name
     font-size: 0.6rem
 
-@media all and (min-width: 800px) and (max-width: 1280px)
+@media all and (min-width: 1000px) and (max-width: 1280px)
   .developer__name
     margin-left: 52.5%
 
@@ -176,7 +172,7 @@ a, p
   left: 50%
   transform: translate(-50%, 0%)
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .game__progress
     font-size: 1.125rem
 
@@ -194,7 +190,7 @@ a, p
   color: #fff
   font-family: 'Gothic Bold'
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .network
     font-size: 0.875rem
 
@@ -209,7 +205,7 @@ a, p
   width: 25px
   height: 25px
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .network img
     width: 20px
     height: 20px
@@ -220,7 +216,7 @@ a, p
     height: 30px
 
 .main-screen-bar
-  height: 2.5vh
+  height: 25px
   width: 100%
   background-color: #cb6d29
   cursor: pointer
@@ -237,6 +233,10 @@ a, p
     cursor: pointer
     z-index: 5
 
+@media all and (max-width: 1000px)
+  .main-screen-bar
+    height: 20px
+
 .link-to-middle
   position: absolute
   bottom: 0
@@ -252,19 +252,19 @@ a, p
 .arrow-to img
   transform: translate(-50%, 0%)
   z-index: 6
-  width: 80%
+  width: 25px
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .arrow-to img
-    width: 60%
+    width: 20px
 
 @media all and (min-width: 1366px) and (max-width: 1440px)
   .arrow-to img
-    width: 60%
+    width: 25px
 
 @media all and (min-width: 2560px) and (max-width: 3840px)
   .arrow-to img
-    width: 80%
+    width: 25px
     transform: translate(-50%, -50%)
 
 .middle
@@ -282,7 +282,7 @@ a, p
   top: 50px
   left: 4%
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .game__desc__rect
     height: 280px
     top: 65px
@@ -317,7 +317,7 @@ a, p
   margin-top: 5%
   flex-wrap: wrap
 
-@media all and(max-width: 800px)
+@media all and(max-width: 1000px)
     .platform__logos
         width: 100%
         margin-top: 25%
@@ -342,7 +342,7 @@ a, p
   transform: translate(-25%, -50%)
   transition-duration: 1s
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .slide__png
     top: 50%
 
@@ -355,7 +355,7 @@ a, p
   opacity: 0.7
   transition-duration: 1s
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .before__swipe
     height: 35vh
 
@@ -363,7 +363,7 @@ a, p
   z-index: 5
   margin-top: 5%
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
     .swiper-container
         height: 35vh
         margin-top: 30%
@@ -379,7 +379,7 @@ a, p
     width: 100%
     height: 97.5vh
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
     .swiper-slide
         img
             height: 35vh
@@ -390,7 +390,7 @@ a, p
   justify-content: space-between
 
 .middle-screen-bar
-  height: 2.5vh
+  height: 25px
   width: 100%
   background-color: #cb6d29
   cursor: pointer
@@ -410,6 +410,10 @@ a, p
   &:hover
     opacity: 0.8
     transition-duration: 1s
+
+@media all and (max-width: 1000px)
+  .middle-screen-bar
+    height: 20px
 
 .link-to-footer
   position: absolute
@@ -437,7 +441,7 @@ footer
   transform: translate(-50%, 0%)
   white-space: nowrap
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .footer__title
     font-size: 2.75rem
     top: 30%
@@ -455,7 +459,7 @@ footer
   img
     width: 100%
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .left__robot
     left: 0%
     img
@@ -477,7 +481,7 @@ footer
   img
     width: 100%
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .top__robot
     left: 45%
     right: 0%
@@ -514,7 +518,7 @@ footer
   img
     padding-left: 50px
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .game__engines
     display: none
 
@@ -523,7 +527,7 @@ footer
   bottom: 2.5%
   right: 1.5%
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .contacts
     color: #fff
     z-index: 7
@@ -536,6 +540,10 @@ footer
   position: absolute
   bottom: 12.5%
   right: 0
+
+@media all and (max-width: 1000px)
+  .contacts__title
+    font-size: 1rem
     
 @media all and (min-width: 2560px) and (max-width: 3840px)
   .contacts__title
@@ -547,6 +555,10 @@ footer
   margin-top: 100%
   user-select: text
 
+@media all and (max-width: 1000px)
+  .contact__email
+    font-size: 0.875rem
+
 @media all and (min-width: 2560px) and (max-width: 3840px)
   .contact__email
     font-size: 18px
@@ -555,6 +567,6 @@ footer
   min-width: 100%
   min-height: 100vh
 
-@media all and (max-width: 800px)
+@media all and (max-width: 1000px)
   .slider
     min-height: 35vh
