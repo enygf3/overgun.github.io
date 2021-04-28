@@ -16,6 +16,8 @@
   display: none; }
 
 @media all and (max-width: 900px) and (orientation: landscape) {
+  .wrapper {
+    display: none; }
   .mobile__orientation__land {
     position: fixed;
     width: 100vw;
@@ -39,15 +41,20 @@
       position: absolute;
       top: 60%;
       left: 47%;
-      animation: rotate 3s ease infinite; } }
+      animation: rotate 5s ease infinite; } }
 
 @keyframes rotate {
   0% {
-    transform: rotateZ(-90deg) translate(-50%, -50%); }
+    transform: rotateZ(-90deg) translate(-50%, -50%);
+    opacity: 0; }
   50% {
-    transform: rotateZ(0deg) translate(0%, 0%); }
+    transform: rotateZ(0deg) translate(0%, 0%);
+    opacity: 1; }
+  55% {
+    opacity: 0; }
   100% {
-    transform: rotateZ(-90deg) translate(-50%, -50%); } }
+    transform: rotateZ(-90deg) translate(-50%, -50%);
+    opacity: 0; } }
 
 img {
   pointer-events: none; }
