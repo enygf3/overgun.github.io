@@ -34,6 +34,21 @@
       font-family: 'Gothic Bold'
       color: #fff
       font-size: 1rem
+    img
+      width: 60px
+      height: 60px
+      position: absolute
+      top: 60%
+      left: 47%
+      animation: rotate 3s ease infinite
+
+@keyframes rotate
+  0%
+    transform: rotateZ(-90deg) translate(-50%, -50%)
+  50%
+    transform: rotateZ(0deg) translate(0%, 0%)
+  100%
+    transform: rotateZ(-90deg) translate(-50%, -50%)
 
 img
   pointer-events: none
