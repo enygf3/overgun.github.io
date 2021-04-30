@@ -322,7 +322,8 @@ a, p {
 @media all and (max-width: 900px) {
   .game__desc {
     word-spacing: 3px;
-    width: 87.5%; } }
+    width: 87.5%;
+    margin: 0% 0% 0% 7.5%; } }
 
 @media all and (min-width: 2000px) and (max-width: 2048px) {
   .game__desc {
