@@ -345,8 +345,11 @@ a, p {
 
 @media all and (max-width: 800px) {
   .platform__logos {
-    width: 80%;
-    margin-top: 25%; }
+    width: 350px;
+    margin-top: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; }
     .platform__logos img {
       width: 120px; }
   .switch-logo img {
